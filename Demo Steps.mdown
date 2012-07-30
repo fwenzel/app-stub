@@ -4,11 +4,12 @@ Demo Steps
 * Download Mortar
 * Extract (to app-stub/)
 * edit www/manifest.webapp
-* add:    "launch_path": "/app-stub/",
+* add:
+
+    "launch_path": "/app-stub/",
+
 
 * Edit www/index.html
-* Uncomment x-tags line
-* Uncomment x-tags accordion
 * add HTML:
 
     <h1>Hello world!</h1>
@@ -43,9 +44,16 @@ Demo Steps
 * Edit www/css/app.css
 * Add:
 
+@import "lib/x-tag/accordion.css";
 x-toggler {
     background-color: #ee8;
 }
+
+* Edit app.js
+* Add:
+
+require(['x-tag', 'x-tag/accordion']);
+
 
 * open index.html, show it works.
 

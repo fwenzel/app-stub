@@ -6,6 +6,7 @@
 /* @import "bootstrap-responsive.css"; */
 
 /* Your styles here */
+@import "lib/x-tag/accordion.css";
 x-toggler {
     background-color: #ee8;
 }

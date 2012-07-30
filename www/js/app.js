@@ -2,11 +2,10 @@
 // The code below uses require.js, a module system for javscript:
 // http://requirejs.org/docs/api.html#define
 
-require.config({ 
+require.config({
     baseUrl: 'js/lib',
-    paths: {'jquery':
-            ['//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min',
-             'lib/jquery']},
+    paths: {'jquery': ['jquery']
+         },
 
 });
 
@@ -32,7 +31,7 @@ define("app", function(require) {
 
     // Hook up the installation button, feel free to customize how
     // this works
-    
+
     var install = require('install');
 
     function updateInstallButton() {
@@ -48,7 +47,7 @@ define("app", function(require) {
     }
 
     $(function() {
-        $('.install-btn').click(install);        
+        $('.install-btn').click(install);
     });
 
     install.on('change', updateInstallButton);
@@ -62,7 +61,7 @@ define("app", function(require) {
         // Feel free to customize this
         var msg = $('.install-ios-msg');
         msg.show();
-        
+
         setTimeout(function() {
             msg.hide();
         }, 8000);
@@ -81,3 +80,5 @@ require(['https://marketplace-cdn.addons.mozilla.net/mozmarket.js'],
                 alert('The in-app purchasing is currently unavailable.');
             };
         });
+
+require(['x-tag', 'x-tag/accordion']);

@@ -48,3 +48,8 @@ x-toggler {
 }
 
 * open index.html, show it works.
+
+
+* Make github repository, call it app-stub
+* git init, git remote add origin <url>, git add, git commit -m 'meh', git push origin master
+* volo build && volo ghdeploy

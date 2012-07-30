@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+    <!-- If using Twitter Bootstrap, uncomment these lines
+         (also see javascript at the bottom of this file) -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
+
+    <!-- x-tags: https://github.com/csuwldcat/x-tag -->
+    <script src="js/lib/x-tag.js"></script>
+
+    <!-- For x-tags, you need to include each component's style and js
+         here, for example for the accordion: -->
+    <link rel="stylesheet" href="css/lib/x-tag/accordion.css">
+    <script src="js/lib/x-tag/accordion.js"></script>
+
+
+    <!-- Do not add any other CSS here and @import it in app.css. It
+         will be inlined when building. -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+    <!-- All JavaScript at the bottom, except this Modernizr build.
+         Modernizr enables HTML5 elements & feature detects for optimal performance.
+         Create your own custom Modernizr build: www.modernizr.com/download/ -->
+    <script src="js/lib/modernizr-2.5.3.min.js"></script>
+  </head>
+  <body>
+    <!-- These messages can appear when the user tries to install the
+         app. You can customize the how it looks with CSS and how it
+         behaves (see app.js) -->
+    <div class="install-error"></div>
+    <div class="install-ios-msg">
+      To install, press the forward arrow in Safari and touch "Add to
+      Home Screen"
+    </div>
+
+    <!-- Put this install button somewhere on the page and the user
+         will be able to click it to install your app -->
+    <!-- <button class="install-btn">Install</button> -->
+
+
+    <!-- Add your site or application content here -->
+
+
+    <h1>Hello world!</h1>
+
+    <x-accordion>
+      <x-toggler selected="true">We're no strangers to love</x-toggler>
+      <div>
+        You know the rules and so do I<br>
+        A full commitment's what I'm thinking of<br>
+        You wouldn't get this from any other guy<br>
+        I just wanna tell you how I'm feeling<br>
+        Gotta make you understand
+      </div>
+      <x-toggler>Never gonna give you up</x-toggler>
+      <div>
+        Never gonna let you down<br>
+        Never gonna run around and desert you<br>
+        Never gonna make you cry,<br>
+        Never gonna say goodbye<br>
+        Never gonna tell a lie and hurt you
+      </div>
+      <x-toggler>We've known each other for so long</x-toggler>
+      <div>
+        Your heart's been aching but you're too shy to say it<br>
+        Inside we both know what's been going on<br>
+        We know the game and we're gonna play it<br>
+        And if you ask me how I'm feeling<br>
+        Don't tell me you're too blind to see
+      </div>
+    </x-accordion>
+
+
+
+
+    <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <script type="text/javascript"
+            data-main="js/app.js"
+            src="js/lib/require.js"></script>
+
+
+
+    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+         mathiasbynens.be/notes/async-analytics-snippet -->
+    <!--
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    -->
+  </body>
+</html>

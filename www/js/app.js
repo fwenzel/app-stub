@@ -4,7 +4,8 @@
 
 require.config({
     baseUrl: 'js/lib',
-    paths: {'jquery': ['jquery']}
+    paths: {'jquery': ['jquery'],
+            'popcorn': ['http://cdn.popcornjs.org/code/dist/popcorn-complete.min']}
 });
 
 
@@ -22,9 +23,8 @@ define("app", function(require) {
 
 
     // **** START HERE: Put your js code here *************
-    require(['http://cdn.popcornjs.org/code/dist/popcorn-complete.min.js'], function() {
+    require(['popcorn'], function() {
         var popcorn = Popcorn('#never');
-        //var popcorn = Popcorn.youtube('#never', 'http://www.youtube.com/watch?v=dQw4w9WgXcQ');
         popcorn.on("timeupdate", function(e) {
             var secs = [18, 22, 26, 31, 35, 40, 43, 45, 47, 51, 53, 56, 60];
             var txtidx = secs.indexOf(popcorn.roundTime());

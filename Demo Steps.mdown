@@ -61,3 +61,6 @@ require(['x-tag', 'x-tag/accordion']);
 * Make github repository, call it app-stub
 * git init, git remote add origin <url>, git add, git commit -m 'meh', git push origin master
 * volo build && volo ghdeploy
+
+* go to http://fwenzel.github.com/app-stub , click install
+* if not present, head to https://myapps.mozillalabs.com/ and remove the app before proceeding

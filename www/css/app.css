@@ -6,7 +6,4 @@
 /* @import "bootstrap-responsive.css"; */
 
 /* Your styles here */
-@import "lib/x-tag/accordion.css";
-x-toggler {
-    background-color: #ee8;
-}
+#lyrics li { font-size: 120%; font-weight: bold; display: none; }

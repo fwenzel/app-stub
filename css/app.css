@@ -104,36 +104,4 @@ td { vertical-align: top; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
-x-accordion, x-accordion x-toggler, x-accordion > *  {
-	display: block;
-	display: box;
-	display: -o-box;
-	display: -ms-box;
-	display: -moz-box;
-	display: -webkit-box;
-	box-orient: vertical;
-	-o-box-orient: vertical;
-	-ms-box-orient: vertical;
-	-moz-box-orient: vertical;
-	-webkit-box-orient: vertical;
-}
-x-accordion x-toggler {
-	cursor: default;
-}
-x-accordion x-toggler[selected="true"] {
-	text-decoration: underline;
-}
-x-accordion > * {
-	display: none;
-}
-x-accordion x-toggler[selected="true"] + * {
-	display: block;
-	display: box;
-	display: -o-box;
-	display: -ms-box;
-	display: -moz-box;
-	display: -webkit-box;
-}
-x-toggler {
-    background-color: #ee8;
-}
+#lyrics li { font-size: 120%; font-weight: bold; display: none; }

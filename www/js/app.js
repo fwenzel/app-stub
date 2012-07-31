@@ -22,7 +22,7 @@ define("app", function(require) {
 
 
     // **** START HERE: Put your js code here *************
-    require(['popcorn-complete.min'], function() {
+    $().ready(function() {
         var popcorn = Popcorn('#never');
         popcorn.on("timeupdate", function(e) {
             var secs = [18, 22, 26, 31, 35, 40, 43, 45, 47, 51, 53, 56, 60];

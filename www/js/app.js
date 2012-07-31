@@ -4,8 +4,7 @@
 
 require.config({
     baseUrl: 'js/lib',
-    paths: {'jquery': ['jquery'],
-            'popcorn': ['http://cdn.popcornjs.org/code/dist/popcorn-complete.min']}
+    paths: {'jquery': ['jquery']}
 });
 
 
@@ -23,7 +22,7 @@ define("app", function(require) {
 
 
     // **** START HERE: Put your js code here *************
-    require(['popcorn'], function() {
+    require(['popcorn-complete.min'], function() {
         var popcorn = Popcorn('#never');
         popcorn.on("timeupdate", function(e) {
             var secs = [18, 22, 26, 31, 35, 40, 43, 45, 47, 51, 53, 56, 60];
